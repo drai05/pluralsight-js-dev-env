@@ -1,0 +1,41 @@
+{
+  "name": "pluralsight-js-dev-env",
+  "version": "1.0.0",
+  "description": "Javascript Development Environment from PluralSight Course with Cory House",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "node buildScripts/startMessage.js",
+    "start": "node buildScripts/srcServer.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "security-check": "nsp check",
+    "localtunnel": "lt --port 3000",
+    "share": "npm-run-all --parallel security-check open:src localtunnel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drai05/pluralsight-js-dev-env.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drai05/pluralsight-js-dev-env/issues"
+  },
+  "homepage": "https://github.com/drai05/pluralsight-js-dev-env#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "eslint": "3.8.1",
+    "eslint-plugin-import": "2.0.1",
+    "express": "^4.17.1",
+    "npm-run-all": "^4.1.5",
+    "npm-windows-upgrade": "^6.0.1",
+    "numeral": "1.5.3",
+    "open": "^6.4.0",
+    "open-source-library": "^0.3.3",
+    "path": "^0.12.7",
+    "webpack": "^4.35.3",
+    "whatwg-fetch": "1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}
